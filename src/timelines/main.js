@@ -1,5 +1,4 @@
 import preamble from "./preamble";
-import { countdown } from "@brown-ccv/behavioral-task-trials";
 import { cameraStart, cameraEnd } from "../trials/camera"
 import { lang, config } from "../config/main";
 import { showMessage } from "@brown-ccv/behavioral-task-trials";
