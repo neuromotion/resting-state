@@ -1,6 +1,16 @@
 import { jsPsych } from 'jspsych-react'
 import requireContext from 'require-context.macro'
 
+const removeCursor = (elementId) => {
+  let element = document.getElementById(elementId);
+  element.classList.add("nocursor");
+}
+
+const addCursor = (elementId) => {
+  let element = document.getElementById(elementId);
+  element.classList.remove("nocursor");
+}
+
 const sleep = (ms) => {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -106,5 +116,7 @@ export {
   startKeypressListener,
   getProlificId,
   getTurkUniqueId,
-  beep
+  beep,
+  removeCursor,
+  addCursor
 }

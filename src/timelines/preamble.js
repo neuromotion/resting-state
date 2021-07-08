@@ -2,6 +2,7 @@ import holdUpMarker from "../trials/holdUpMarker";
 import startCode from "../trials/startCode";
 import { lang, config } from "../config/main";
 import { showMessage } from "@brown-ccv/behavioral-task-trials";
+import { initialInstructions } from '../trials/instructions'
 
 let timeline = [showMessage(config, {
   responseType: "html_button_response",
@@ -13,6 +14,7 @@ if (config.USE_PHOTODIODE) {
   timeline.push(holdUpMarker())
   timeline.push(startCode())
 }
+timeline.push(initialInstructions())
 
 const preamble = {
   type: "html_keyboard_response",
