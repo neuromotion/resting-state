@@ -20,9 +20,9 @@ The task involves several relaxed tasks: following a moving dot with one's eyes,
 2. Navigate to the directory
 
 ```cd resting-state```
-3. Install `npm` packages (`-D` installs development dependencies in addition to production ones)
+3. Install `npm` packages
 
-```npm install -D```
+```npm install```
 4. Run in development mode
 
 ```npm run dev```
